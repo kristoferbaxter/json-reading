@@ -1,0 +1,12 @@
+{
+  "name": "json-reading",
+  "version": "0.1.0",
+  "description": "Test reading and writing JSON.",
+  "main": "index.js",
+  "author": "Kristofer Baxter",
+  "license": "Apache-2",
+  "dependencies": {
+    "fs-extra": "^7.0.0",
+    "performance-now": "^2.1.0"
+  }
+}
