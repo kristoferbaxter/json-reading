@@ -23,9 +23,8 @@ async function test(file, key) {
 const pre10k = now();
 Promise.resolve(test(TEN_THOUSAND_ENTRIES, "2b5dc3dc7f452615849defe6a16b48393ae993ef")).then(function() {
   console.log('10K COMPLETE  - ', now() - pre10k);
-});
-
-const pre700k = now();
-Promise.resolve(test(SEVEN_HUNDRED_THOUSAND_ENTRIES, "c8531ab343dec88ed8005e403b1b304c710b7494")).then(function() {
-  console.log('700K COMPLETE - ', now() - pre700k);
+  const pre700k = now();
+  Promise.resolve(test(SEVEN_HUNDRED_THOUSAND_ENTRIES, "c8531ab343dec88ed8005e403b1b304c710b7494")).then(function() {
+    console.log('700K COMPLETE - ', now() - pre700k);
+  });
 });
